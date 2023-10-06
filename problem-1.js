@@ -44,30 +44,36 @@
 // }
 
 // problem-6
-// let month = 2;
-// let year = 2000;
-
-// if( month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 9 || month ==12){
-//     console.log('month of day : 31');
-// }
-// else if(month == 2) {
-//     if( year % 4 == 0){
-//         if(month == 2){
-//             console.log('month of day : 29')
+let month = 22;
+let year = 2000;
+if(month>0 && month<=12 ){
+    if( month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 9 || month ==12){
+        console.log('month of day : 31');
+    }
+    else if(month == 2) {
+        if( year % 4 == 0){
+            if(month == 2){
+                console.log('month of day : 29')
+                
+            }
+         
             
-//         }
-     
+        }
+        else{
+            console.log('month of day : 28')  
+        }
         
-//     }
-//     else{
-//         console.log('month of day : 28')  
-//     }
     
+    }
+    else{
+        console.log('month of day : 30');
+    } 
 
-// }
-// else{
-//     console.log('month of day : 30');
-// }
+}
+
+else{
+    console.log('invalid number');
+}
 // problem-7
 
 
